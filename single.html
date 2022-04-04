@@ -64,7 +64,13 @@
             </div>
           </div>
         </div>
+        <div class="mouse">
+          <a href="" class="mouse-icon">
+            <div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+          </a>
+        </div>
       </div>
+      
     </div>
 		
 		<section class="ftco-section">
@@ -80,7 +86,7 @@
                 </video> 
             </p>
             <p style="text-align: center;">
-              <img id="project_image1" alt="" class="img-fluid">
+              <img id="project_image1" alt="" class="img-fluid" width="1000px">
             </p>
              
 
@@ -108,6 +114,7 @@
       </div>
     </section> <!-- .section -->
 
+   
      <footer class="ftco-footer ftco-section" style="padding: 3em">
       <div class="container">
         <div class="row">
@@ -153,8 +160,19 @@
     console.log("Project ID retrieved: ", projectId)
 
     projectsData = [
-      {
+     
+    {
         "id":"0",
+        "name":"Web Scraper",
+        "tagline":"Get Meta Data from any website",
+        "description": "A simple Web Scraper built with Node.js Framework and hosted to a serverless architecture, Azure Functions. This function allows us to get Meta Data Tags from any website when typed in the URL. To use it, simply go to : <i><b> getmetadatascraper.azurewebsites.net/api/FetchMetaData?url= </b> </i> and add the website you want Meta Data for after this <b>'=' </b> ", 
+        "languages":["Node.js", "JavaScript", "Azure Functions"],
+        "images":["images/fetchMetaData.png"],
+        "link":"https://github.com/harnoorDev/WebScraper"
+      },
+    
+    {
+        "id":"1",
         "name":"Space Shooter",
         "tagline":"Shoot enemy spaceships and objects to earn points",
         "description": "Space Shooting Game made in C++ using SDL framework and Visual Studio as the IDE. Data Structures, Pointers to manage real-time game data. The game allows you to shoot with your spacebar key and move through different directions using WSAD keys. Kill enemy spaceships and objects to earn points, the larger object you kill the more points you earn. Also, you lose your lives if you collide with enemy objects.You can also pick coins to earn points.",
@@ -163,7 +181,7 @@
         "link":"https://github.com/harnoorDev/SpaceShooterGame"
       },
       {
-        "id":"1",
+        "id":"2",
         "name":"Geo Quiz",
         "tagline":"Android Application containing interesting quizes",
         "description": "Geo Quiz App is made in Kotlin Language for Android OS. This app can run in both portrait and landscape mode and for better UI experience, the background picture changes with every question and is realted to the question as well. I have made use of toasts to display the final score and the some important messages to the user. The application also has a scoreboard which gets saved in app data itself. After answering a question, you cant go backwards and change your answer as the question is disabled",
@@ -173,7 +191,7 @@
         "linkNotes":""
       },
       {
-        "id":"2",
+        "id":"3",
         "name":"Cruise Ship Booking System",
         "tagline":"Booking a cruise gets easier now",
         "description": "Created a Java web app in my 5th Semester Finals for booking a Cruise from scratch using Spring Boot and ThymeLeaf. I made use of REST Controller and use of Path Variable to get JSON formatted customer data. The app is implemented with Spring Security 5 to restrict users to different type of roles. (Customer, Staff, Admin) thus preventing anonymous users to navigate to secure pages. Added JUNIT Testing for Loading index page and JPA Data insert into customer repository.",
@@ -182,7 +200,7 @@
         "link": "https://github.com/harnoorDev/CruiseBookingSpringBootApp"
       },
       {
-        "id":"3",
+        "id":"4",
         "name":"Online Electronics Shop",
         "tagline":"Shopping Web Application",
         "description": "Made the shopping website using ASP.NET and C#. Utilized ADO.NET to read and write database data. Page to page communication using query strings. Session variables used to maintain state. Application created in Visual Studio.",
@@ -191,7 +209,7 @@
         "link":"https://github.com/harnoorDev/OnlineShoppingCart"
       },
        {
-        "id":"4",
+        "id":"5",
         "name":"Banking System Console Application",
         "tagline":"Secure Banking Transactions",
         "description": "Banking System Console Application designeding using C and Data Structures. Implemented sorting and searching algorithms (linear and Binary) including array, structures, pointers and functions to store, display the data list contents in forwards/ backwards order.A lookup/search function to find a specific data item in the list. Compared, evaluated the performance of the sort and search algorithms.",
@@ -200,7 +218,7 @@
         "link":"https://github.com/harnoorDev/BankApplicationSystem"
       },
        {
-        "id":"5",
+        "id":"6",
         "name":"CourseAid",
         "tagline":"A better version of RateMyProfessors",
         "description": "It's my ongoing Capstone project at Sheridan with an awesome team of 4 members. Aiming to help college students share their experiences and opinions with different courses and professors, and take better decisions based on different ratings available on the platform.",
@@ -209,7 +227,7 @@
         "link":""
       },
       {
-        "id":"6",
+        "id":"7",
         "name":"City Bus Management System",
         "tagline":"Desktop Application made in C#",
         "description": "The Application’s purpose is to manage the buses of a local transit . The application can add a bus,delete it,update the route, add driver to the bus , show recently added bus and show all of the record of a particular bus. The application creates a txt file named after a bus number that is added everytime we add a new bus. It is unique number and is used to delete the bus , update the route through it and also appends the data of the driver ie. ID ,first name,last name to the file.",
@@ -218,7 +236,7 @@
         "link":"https://github.com/harnoorDev/City-Bus-Management-System"
       },
          {
-        "id":"7",
+        "id":"8",
         "name":"Weather Progressive Web App",
         "tagline":"A simple weather Web App",
         "description": "Built, deployed and published a simple Weather Progressive Web App (PWA) by using React.js, Service Workers. PWA is the future of the web. Progressive Web Apps allow what you build to be installed by anyone, anywhere, on any device with a single codebase. After running an audit report on Lighthouse we find that our PWA is getting a perfect score in all three aspects (Fast and Reliable, Installable, PWA optimized)",
